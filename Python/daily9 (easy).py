@@ -3,7 +3,6 @@
 ## 
 ## 
 ## sarthak7u@gmail.com
-#!!!!!!!!!!!! INCOMPLETE !!!!!!!!!!!!!
 
 #list to store input digits
 input_list = []
