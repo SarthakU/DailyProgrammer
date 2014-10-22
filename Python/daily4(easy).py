@@ -1,3 +1,5 @@
+## PASSWORD GENERATOR
+##
 ## challenge #4 (easy)
 ## http://www.reddit.com/r/dailyprogrammer/comments/pm6oj/2122012_challenge_4_easy/
 ## 

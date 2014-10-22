@@ -1,3 +1,12 @@
+/** 
+ * CAESAR CIPHER
+ *
+ * challenge #4 (easy)
+ * http://www.reddit.com/r/dailyprogrammer/comments/pm6oj/2122012_challenge_4_easy/
+ *
+ * sarthak7u@gmail.com
+ */
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

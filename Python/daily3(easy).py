@@ -1,8 +1,7 @@
-
 ## CAESAR CIPHER
 ##
-## challenge #4 (easy)
-## http://www.reddit.com/r/dailyprogrammer/comments/pm6oj/2122012_challenge_4_easy/
+## challenge #3 (easy)
+## http://www.reddit.com/r/dailyprogrammer/comments/pkw2m/2112012_challenge_3_easy/
 ## 
 ## 
 ## sarthak7u@gmail.com
