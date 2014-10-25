@@ -7,11 +7,11 @@
 
 #computes simple interest
 def simpleInterest(principle, rate, timePeriod):
-	return principle * rate * timePeriod
+	return principle * (rate/100) * timePeriod
 
 #computes compound interest
 def compoundInterest(principle, rate, timePeriod):
-	return (principle * ((1 + rate)**timePeriod)) - principle
+	return (principle * ((1 + (rate/100))**timePeriod)) - principle
 
 principle = float(raw_input("Enter the Principle amount: "))
 rate = float(raw_input("Enter the interest rate: "))

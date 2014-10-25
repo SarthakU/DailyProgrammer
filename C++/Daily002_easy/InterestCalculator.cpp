@@ -57,7 +57,7 @@ int main()
  */
 double simpleInterest(double principle, double rate, double timePeriod)
 {
-	return principle * rate * timePeriod;
+	return principle * (rate/100) * timePeriod;
 }
 
 /**
@@ -65,5 +65,5 @@ double simpleInterest(double principle, double rate, double timePeriod)
  */
 double compoundInterest(double principle, double rate, double timePeriod)
 {
-	return (principle * pow((1 + rate), timePeriod)) - principle;
+	return (principle * pow((1 + (rate/100)), timePeriod)) - principle;
 }
