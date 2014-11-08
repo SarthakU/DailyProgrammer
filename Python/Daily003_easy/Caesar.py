@@ -7,7 +7,7 @@
 ## sarthak7u@gmail.com
 ##
 
-#encrypts 
+# encrypts 
 def encrypt(text, key):
 
 	cipherText = ""
@@ -31,11 +31,47 @@ def encrypt(text, key):
 
 	return cipherText
 
-#takes inputs from user
-inputText = str(raw_input("Enter some text for me to Encrypt: "))
-key = int(raw_input("Enter a key to Encrypt: "))
+# decrypts
+def decrypt(cipherText, key):
+	text = ""
+
+	i = 0
+	for letter in cipherText:
+
+		#skips over non-alpha characters
+		if letter.isalpha() == False:
+			text += letter
+		#ciphers using caesar cipher 
+		else:
+			if letter.isupper() == True:
+				if ord(letter) - ord('A') - key < 0:
+					tempLetter = ord(letter) - key + 26
+				else:
+					tempLetter = ord(letter) - key 
+			elif letter.islower() == True:
+				if ord(letter) - ord('a') - key < 0:
+					tempLetter = ord(letter) - key + 26
+				else:
+					tempLetter = ord(letter) - key 
+			text += chr(tempLetter)
+
+			
+		i += 1
+
+	return text
 
 
-print encrypt(inputText, key)
+# asks user whether to decrypt or encrypt then does so
+choice = str(raw_input("Enter 1 for encryption, 2 for decryption: "))
+if choice == "2":
+	inputText = str(raw_input("Enter some text for me to Decrypt: "))
+	key = int(raw_input("Enter a key to Decrypt: "))
+	print decrypt(inputText, key)
+else:
+	inputText = str(raw_input("Enter some text for me to Encrypt: "))
+	key = int(raw_input("Enter a key to Encrypt: "))
+	print encrypt(inputText, key)	
 
-raw_input()
+
+
+
