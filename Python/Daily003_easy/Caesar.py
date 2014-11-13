@@ -60,6 +60,7 @@ def decrypt(cipherText, key):
 
 	return text
 
+
 # asks user whether to decrypt or encrypt then does so
 choice = str(raw_input("Enter 1 for encryption, 2 for decryption: "))
 if choice == "2":
@@ -70,3 +71,7 @@ else:
 	inputText = str(raw_input("Enter some text for me to Encrypt: "))
 	key = int(raw_input("Enter a key to Encrypt: "))
 	print encrypt(inputText, key)	
+
+
+
+
