@@ -12,7 +12,6 @@ lower_limit = int(argv[1]);upper_limit = int(argv[2]) + lower_limit
 prime_list = []
 prime_sum = 0
 count = 0
-j = 0
 for i in xrange(lower_limit,upper_limit):
     is_prime = True
     if i % 2 == 0 or i % 3 == 0 or i % 5 == 0 or i % 7 == 0:
@@ -26,7 +25,9 @@ for i in xrange(lower_limit,upper_limit):
     if is_prime == True:
         prime_list.append(i)
         prime_sum += i
-print prime_sum
-#print prime_list
-print len(prime_list)
-print "----------",count,"----------"
+print ""
+print len(prime_list), "Prime numbers between", argv[1], "and", argv[1] + argv[2], "are :"
+print ""
+print prime_list
+print ""
+print "Sum of these numbers is", prime_sum
