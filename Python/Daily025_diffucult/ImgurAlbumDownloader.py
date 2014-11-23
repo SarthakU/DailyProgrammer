@@ -25,10 +25,10 @@ for i in html:
 			# checks whether thumbnail by checking whether last character s
 			if link[-5:-6:-1] != "s":
 				links.append(link)
-				print link
 	index += 1
 index = 1
 for i in links:
 	open("a.jpg",'w').close()
-	urllib.urlretrieve(links[0],"%04d.jpg" % index)
+	print "Downloading -->", links[index - 1]
+	urllib.urlretrieve(links[index - 1],"%04d.jpg" % index)	
 	index += 1
