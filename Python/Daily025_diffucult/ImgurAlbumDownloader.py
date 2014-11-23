@@ -9,6 +9,8 @@
 import urllib2
 import urllib
 album = raw_input("Enter you album URL : ")
+if album[:8] != 'https://':
+	album = 'https://' + album
 response = urllib2.urlopen(album)
 html = response.read()
 links = []
