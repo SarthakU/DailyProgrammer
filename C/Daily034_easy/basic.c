@@ -1,8 +1,8 @@
 /** 
  * SUM BIG TWO
  *
- * challenge #36 (easy)
- * http://www.reddit.com/r/dailyprogrammer/comments/ruiob/452012_challenge_36_easy/
+ * challenge #34 (easy)
+ * http://www.reddit.com/r/dailyprogrammer/comments/rmmn8/3312012_challenge_34_easy/
  *
  * sarthak7u@gmail.com
  */
