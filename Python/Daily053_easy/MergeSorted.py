@@ -7,4 +7,4 @@
 ## sarthak7u@gmail.com
 ##
 def merge_sorted(list1, list2):
-	return [i for i in sorted(list1+list2)]
+	return sorted(list1+list2)
