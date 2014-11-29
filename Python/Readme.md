@@ -5,10 +5,18 @@
 Takes name of city as input and outputs weather data in metric units
 </br>
 <h2>
-  <a href="https://github.com/SarthakU/DailyProgrammer/blob/master/Python/Daily025_diffucult/ImgurAlbumDownloader.py">Imgur Image Downloader</a>
+  <a href="https://github.com/SarthakU/DailyProgrammer/blob/master/Python/Daily025_diffucult/ImgurAlbumDownloader.py">Imgur Album Downloader</a>
 </h2>
 Takes imgur album url as input and downloades all images from the album in the working directory
+<h2>
+	<a href="https://github.com/SarthakU/DailyProgrammer/blob/master/Python/Daily007_easy/Morse.py">Morse Code</a>
+</h2>
+Translate to and from Morse Code
 <h2>
 	<a href="https://github.com/SarthakU/DailyProgrammer/blob/master/Python/Daily003_easy/Caesar.py">Caesar Cipher</a>
 </h2>
 Program can encrypt and decrypt texts with an alphabetical caesar cipher
+<h2>
+	<a href="https://github.com/SarthakU/DailyProgrammer/blob/master/Python/Daily038_intermediate/ReversePolishNotation.py">Reverse Polish Notation</a>
+</h2>
+Transforms algebraic expressions to reverse polish notation 
