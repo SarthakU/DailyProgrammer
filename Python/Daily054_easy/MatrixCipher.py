@@ -25,7 +25,7 @@ def matrixCipher(text, key):
 def decryptMatrixCipher(text):
 	'''can decrypt matrix cipher if 
 	the message starts with "It seems"'''
-	testText = "It_seems"
+	testText = "It seems"
 	key = 0
 	#find the key
 	for i in xrange(1,len(text)):
