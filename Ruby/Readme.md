@@ -7,3 +7,8 @@ Program can encrypt texts with an alphabetical caesar cipher
   <a href="https://github.com/SarthakU/DailyProgrammer/blob/master/Ruby/Daily001_easy/UserInfo.rb">User Info</a>
 </h2>
 Program will ask the user's name, age, and reddit username, have it tell them the information back and log this information.
+
+<h2>
+  <a href="https://github.com/SarthakU/DailyProgrammer/blob/master/Ruby/Daily132_easy/GreatestCommonDiviser.rb">Greatest Common Divisor</a>
+</h2>
+Find greatest common divisor of two numbers
