@@ -20,3 +20,7 @@ Program can encrypt and decrypt texts with an alphabetical caesar cipher
 	<a href="https://github.com/SarthakU/DailyProgrammer/blob/master/Python/Daily038_intermediate/ReversePolishNotation.py">Reverse Polish Notation</a>
 </h2>
 Transforms algebraic expressions to reverse polish notation 
+<h2>
+	<a href="https://github.com/SarthakU/DailyProgrammer/blob/master/Python/Daily001_easy/UserInfo.py">User Info</a>
+</h2>
+Program will ask the user's name, age, and reddit username, have it tell them the information back and log this information.
