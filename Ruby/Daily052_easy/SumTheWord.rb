@@ -1,4 +1,4 @@
-## SQUARE ROOT
+## SUM THE WORD
 ##
 ## challenge #052 (easy)
 ## http://www.reddit.com/r/dailyprogrammer/comments/tmnfq/5142012_challenge_52_easy/
