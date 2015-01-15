@@ -13,4 +13,16 @@ def count_lines(filename):
 	for i in text:
 		if i == "\n":
 			lines += 1
-	print lines
+	return lines
+
+def count_words(filename):
+	f = open(filename, "r")
+	text = f.read()
+	lines = text.split("\n")
+	words = []
+	for i in lines:
+		temp = i.split(" ")
+		for j in temp:
+			if j != "" and j != "\t" and j != " ":
+				words.append(j)
+	return len(words)
