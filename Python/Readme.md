@@ -17,6 +17,19 @@ Translate to and from Morse Code
 </h2>
 Program can encrypt and decrypt texts with an alphabetical caesar cipher
 <h2>
+	<a href="https://github.com/SarthakU/DailyProgrammer/blob/master/Python/Daily034_intermediate/BogoSort.py">BogoSort</a>
+</h2>
+Sort a given sequence using Bogo Sort algorithm
+<h2>
+	<a href="https://github.com/SarthakU/DailyProgrammer/blob/master/Python/Daily070_easy/MostCommonWords.py">Most Common Words</a>
+</h2>
+Find N most common words in a text file
+<h2>
+	<a href="https://github.com/SarthakU/DailyProgrammer/blob/master/Python/Daily037_easy/CountLinesWords.py">Count Lines and Words</a>
+</h2>
+Count number of lines and words in a text file
+
+<h2>
 	<a href="https://github.com/SarthakU/DailyProgrammer/blob/master/Python/Daily038_intermediate/ReversePolishNotation.py">Reverse Polish Notation</a>
 </h2>
 Transforms algebraic expressions to reverse polish notation 
