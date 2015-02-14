@@ -1,4 +1,4 @@
-/** 
+/**
  * GUESS THE NUMBER
  *
  * challenge #115 (easy)
@@ -9,42 +9,80 @@
 
 import java.util.Scanner;
 import java.util.Random;
-public class GuessTheNumber
+
+class GuessTheNumber
 {
-	public static void main(String[] args) 
-	{
-		// Generates a random number initially
-		Random rand = new Random();
-		int comGuess = rand.nextInt(101);
+    static void play()
+    {
+        // setup objects
+        Random rand = new Random();
+        Scanner key = new Scanner(System.in);
 
-		// Welcomes user to game and takes first guess
-		Scanner key = new Scanner(System.in);
-		System.out.println("Welcome to guess-that-numbers game! I have already picked a number in [1, 100]. Please make a guess.");
-		int guess = key.nextInt();
+        // get the number
+        int secret_num =  rand.nextInt(100);
 
-		// variable to count no. of guesses
-		int guesses = 1;
+        int max_guesses = 10;
 
-		// keeps looping till user guesses the correct number
-		while (true)
-		{	
-			if (guess > comGuess)
-			{
-				 System.out.println("Wrong! That number is above my number.");
-			}
-			else if (guess < comGuess)
-			{
-				System.out.println("Wrong! That number is below my number.");
-			}	
-			else
-			{
-				System.out.println("Correct! That is my number, you guessed it in " + guesses +", you win!!!");
-				break;
-			}
-			guess = key.nextInt();
-			guesses ++;
-		}
-		
+        // setup the game
+        System.out.print("\nWelcome to the game!\n");
+        System.out.print("~~~~~~~~~~~~~~~~~~~~\n");
+        System.out.print("I have already picked a number between 1 and 100.\n");
+        System.out.print("You have 8 guesses.\n");
+        System.out.print("Please make a guess. Type \"exit\" to quit.\n");
 
-	}	
+        // start the game
+        int user_guess;
+        int guess_count = 0;
+        while ("pigs" != "fly")
+        {
+            guess_count ++;
+            System.out.print("\n~~~~~~~~~~~~~~~~~~~~\n\n");
+
+            // check if out of guesses
+            if (guess_count == max_guesses)
+            {
+                System.out.print("Sorry! you are out of gusses\n");
+                System.out.print("My number was : " + secret_num + "\n");
+                break;
+            }
+
+            // ask for guess
+            System.out.print("Your guess: ");
+            String user_input = key.next();
+
+            // compare guess with secret number
+            if (!user_input.equals("exit"))
+            {
+                // check if usr input is a number
+                try
+                {
+                    user_guess = Integer.parseInt(user_input);
+                }
+                catch(NumberFormatException e)
+                {
+                    System.out.print("Invalid choice, try again!\n");
+                    continue;
+                }
+
+                if (user_guess > secret_num)
+                {
+                    System.out.print("Wrong! That number is above my number.\n");
+                }
+                else if (user_guess < secret_num)
+                {
+                    System.out.print("Wrong! That number is below my number.\n");
+                }
+                else
+                {
+                    System.out.print("Correct. You win!\n");
+                    break;
+                }
+            }
+            else
+            {
+                System.out.print("Thanks for playing");
+                break;
+            }
+        }
+    }
 }
