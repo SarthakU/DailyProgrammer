@@ -2,16 +2,17 @@
 ##
 ## challenge #64 (difficult)
 ## http://www.reddit.com/r/dailyprogrammer/comments/uzx7y/6132012_challenge_64_difficult/
-## 
-## 
+##
+##
 ## sarthak7u@gmail.com
-import requests 
+
+import requests
 
 city = raw_input("Enter you city: ")
 data = requests.get("http://api.openweathermap.org/data/2.5/find?units=metric&q=%s" % city)
 weather = data.json()['list'][0]['main']
 print """
-	Weather for %s
+    Weather for %s
 _________________________________
 """ % city
 
