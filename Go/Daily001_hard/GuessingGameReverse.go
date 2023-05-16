@@ -1,5 +1,5 @@
 /**
- * USER INPUT
+ * Guessing Game Reversed
  *
  * challenge #1 (hard)
  * https://www.reddit.com/r/dailyprogrammer/comments/pii6j/difficult_challenge_1/
