@@ -21,7 +21,7 @@ func main() {
 
 func try(max, min int) {
 	var judgement, direction string
-	guess := rand.Intn(max - min) + min
+	guess := rand.Intn(max-min) + min
 
 	fmt.Printf("My Guess is %d\n", guess)
 	fmt.Println("Is it correct? (y/n)")
@@ -29,23 +29,29 @@ func try(max, min int) {
 
 	if strings.ToLower(judgement) == "y" {
 		fmt.Println("Guessed it!")
-	} else if strings.ToLower(judgement) == "n" {
+		return
+	}
+
+	if strings.ToLower(judgement) == "n" {
 		fmt.Println("Oops!")
 		fmt.Println("Is it higher or lower? (h/l)")
 		fmt.Scanln(&direction)
 
 		if strings.ToLower(direction) == "h" {
-      try(max, guess)
-		} else if strings.ToLower(direction) == "l" {
-      try(guess, min)
-		} else {
-			fmt.Println("I dont understand, please answer in `h` or `l`")
-			fmt.Println("Restarting!")
-			try(max, min)
+			try(max, guess)
+			return
 		}
+
+		if strings.ToLower(direction) == "l" {
+			try(guess, min)
+			return
+		}
+
+		fmt.Println("I dont understand, please answer in `h` or `l`")
 	} else {
 		fmt.Println("I dont understand, please answer in `y` or `n`")
-		fmt.Println("Restarting!")
-		try(max, min)
 	}
+
+	fmt.Println("Restarting!")
+	try(max, min)
 }
