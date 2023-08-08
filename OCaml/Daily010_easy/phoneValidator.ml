@@ -1,6 +1,6 @@
 (*
   Phone Validator 
-  #6 (easy)
+  #10 (easy)
   https://www.reddit.com/r/dailyprogrammer/comments/pv98f/2182012_challenge_10_easy/
 
   sarthak7u@gmail.com
