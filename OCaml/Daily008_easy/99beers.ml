@@ -1,3 +1,10 @@
+(*
+  99 Beers 
+  Challenge #8 (easy)
+  https://www.reddit.com/r/dailyprogrammer/comments/pserp/2162012_challenge_8_easy/
+
+  sarthak7u@gmail.com
+*)
 let print_beer how_many =
   let _how_many = Int.to_string how_many in
   print_endline (_how_many ^ " bottles of beer on the wall, " ^ _how_many ^ " bottles of beer" );
